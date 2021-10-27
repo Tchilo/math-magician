@@ -7,7 +7,7 @@ body {
 }
 
 button {
-  padding: 25px 60px;
+  padding: 25px 70px;
   font-size: 40px;
 }
 
@@ -17,7 +17,7 @@ button {
   justify-content: end;
   align-items: center;
   font-size: 35px;
-  background-color: brown;
+  background-color: rgb(117, 67, 67);
   color: #fff;
   height: 60px;
   padding: 20px;
@@ -25,7 +25,6 @@ button {
 
 .calculatorKeys {
   display: grid;
-  grid-gap: 2px;
   grid-template-columns: repeat(4, auto);
 }
 
