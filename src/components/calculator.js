@@ -14,32 +14,37 @@ function Calculator() {
 
   const { next, total } = state;
   return (
-    <div>
-      <div className="screen">
-        {
-          next || (total || '0')
-        }
-      </div>
-      <div className="calculatorKeys">
-        <button type="button" onClick={handler}>AC</button>
-        <button type="button" onClick={handler}>+/-</button>
-        <button type="button" onClick={handler}>%</button>
-        <button type="button" onClick={handler} className="orange">÷</button>
-        <button type="button" onClick={handler}>7</button>
-        <button type="button" onClick={handler}>8</button>
-        <button type="button" onClick={handler}>9</button>
-        <button type="button" onClick={handler} className="orange">x</button>
-        <button type="button" onClick={handler}>4</button>
-        <button type="button" onClick={handler}>5</button>
-        <button type="button" onClick={handler}>6</button>
-        <button type="button" onClick={handler} className="orange">-</button>
-        <button type="button" onClick={handler}>1</button>
-        <button type="button" onClick={handler}>2</button>
-        <button type="button" onClick={handler}>3</button>
-        <button type="button" onClick={handler} className="orange">+</button>
-        <button type="button" onClick={handler} className="zero">0</button>
-        <button type="button" onClick={handler}>.</button>
-        <button type="button" onClick={handler} className="orange">=</button>
+    <div className="common">
+      <div className="math">Lets do some Math!</div>
+      <div className="body">
+        <div>
+          <div className="screen">
+            {
+              next || (total || '0')
+            }
+          </div>
+          <div className="calculatorKeys">
+            <button type="button" onClick={handler}>AC</button>
+            <button type="button" onClick={handler}>+/-</button>
+            <button type="button" onClick={handler}>%</button>
+            <button type="button" onClick={handler} className="orange">÷</button>
+            <button type="button" onClick={handler}>7</button>
+            <button type="button" onClick={handler}>8</button>
+            <button type="button" onClick={handler}>9</button>
+            <button type="button" onClick={handler} className="orange">x</button>
+            <button type="button" onClick={handler}>4</button>
+            <button type="button" onClick={handler}>5</button>
+            <button type="button" onClick={handler}>6</button>
+            <button type="button" onClick={handler} className="orange">-</button>
+            <button type="button" onClick={handler}>1</button>
+            <button type="button" onClick={handler}>2</button>
+            <button type="button" onClick={handler}>3</button>
+            <button type="button" onClick={handler} className="orange">+</button>
+            <button type="button" onClick={handler} className="zero">0</button>
+            <button type="button" onClick={handler}>.</button>
+            <button type="button" onClick={handler} className="orange">=</button>
+          </div>
+        </div>
       </div>
     </div>
   );
