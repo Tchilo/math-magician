@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Quote = () => (
-  <div className="quote">
+  <div data-testid="paragraph-parent" className="quote">
     <p>
       Mathmatics is not about numbers, equations,
       computations, or algorithms:

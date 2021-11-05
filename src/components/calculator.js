@@ -18,7 +18,7 @@ function Calculator() {
       <div className="math">Lets do some Math!</div>
       <div className="body">
         <div>
-          <div className="screen">
+          <div data-testid="calculator-display" className="screen">
             {
               next || (total || '0')
             }
