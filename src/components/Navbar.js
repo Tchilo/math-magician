@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashRouter as Router, Link } from 'react-router-dom';
 
 const Navbar = () => {
   const links = [
@@ -21,12 +21,14 @@ const Navbar = () => {
   ];
 
   return (
-    <nav data-testId="navbar" className="navBar">
-      <h2>Math Magicians</h2>
-      <ul className="links">
-        {links.map((link) => <li key={link.id}><Link to={link.path} activeClassName="active-link" exact>{link.text}</Link></li>)}
-      </ul>
-    </nav>
+    <Router>
+      <nav data-testid="navbar" className="navBar">
+        <h2>Math Magicians</h2>
+        <ul className="links">
+          {links.map((link) => <li key={link.id}><Link to={link.path} activeClassName="active-link" exact>{link.text}</Link></li>)}
+        </ul>
+      </nav>
+    </Router>
   );
 };
 

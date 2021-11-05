@@ -3,7 +3,7 @@ import React from 'react';
 const Home = () => (
   <div className="Home">
     <div>
-      <h1>Welcome to my page!</h1>
+      <h1 data-testid="welcome">Welcome to my page!</h1>
     </div>
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt dolore corrupti adipisci?
