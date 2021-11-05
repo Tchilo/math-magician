@@ -19,4 +19,14 @@ describe('Calculator tests', () => {
     const displayScreen = screen.getByTestId('calculator-display');
     expect(displayScreen.firstChild.textContent).toEqual('0');
   });
+
+  test('performs addition when = is called', () => {
+    const obj = {
+      total: '3',
+      next: '2',
+      operation: '+',
+    };
+    const buttonName = '=';
+    expect(calculate(obj, buttonName).total).toBe('5');
+  });
 });

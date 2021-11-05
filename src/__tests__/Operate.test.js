@@ -22,4 +22,7 @@ describe('Test Operate function', () => {
     const result = operate('4', '2', '÷');
     expect(result).toBe('2');
   });
+  test('correctly returns 7 when 35 is divided by 5', () => {
+    expect(operate('35', '5', '÷')).toBe('7');
+  });
 });
