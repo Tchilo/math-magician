@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render App 1`] = `
+Array [
+  <nav
+    className="navBar"
+    data-testid="navbar"
+  >
+    <h2>
+      Math Magicians
+    </h2>
+    <ul
+      className="links"
+    >
+      <li>
+        <a
+          activeClassName="active-link"
+          exact={true}
+          href="#/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          activeClassName="active-link"
+          exact={true}
+          href="#/App"
+          onClick={[Function]}
+        >
+          Calulator
+        </a>
+      </li>
+      <li>
+        <a
+          activeClassName="active-link"
+          exact={true}
+          href="#/Quote"
+          onClick={[Function]}
+        >
+          Quote
+        </a>
+      </li>
+    </ul>
+  </nav>,
+  <div
+    className="Home"
+  >
+    <div>
+      <h1
+        data-testid="welcome"
+      >
+        Welcome to my page!
+      </h1>
+    </div>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt dolore corrupti adipisci? Nemo delectus, excepturi doloribus nam sint fuga quasi atque debitis inventore amet nesciunt animi a asperiores et repudiandae!
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt dolore corrupti adipisci? Nemo delectus, excepturi doloribus nam sint fuga quasi atque debitis inventore amet nesciunt animi a asperiores et repudiandae!
+    </p>
+  </div>,
+]
+`;
